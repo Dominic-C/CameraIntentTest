@@ -107,4 +107,12 @@ public class CameraIntentActivity extends AppCompatActivity {
         return image;
 
     }
+
+    public static final String WARDROBE_ACTIVITY = "com.example.dominic.cameraintentactivity.WARDROBE";
+    // Go to new page
+    public void toWardrobe(View view) // called onClick from "to wardrobe" button
+    {
+        Intent intent = new Intent(this, WardrobeActivity.class); // intent calls another activity or application
+        startActivity(intent);
+    }
 }
